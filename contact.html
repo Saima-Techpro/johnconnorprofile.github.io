@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact me</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      />
+
+      <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+
+    <header>
+
+        <div class="title"><!--Dokta, John Connor, we opened it for the Web Developer section-->
+                <span></span><!-- open for round -->
+                <h2>John Connor</h2>
+                <em>Web Developer</em>
+       </div>
+ 
+       <nav> <!-- top right menu - home - resume section -->  
+            <a href="index.html">Home</a> |        <!-- | Don't forget to put -->
+            <a href="resume.html">Resume</a> |
+            <a href="contact.html">Contact</a>
+       </nav>
+ 
+     </header>
+
+     <main>
+        <h1><span></span>Contact</h1>
+    
+          <!-- Technical section -->
+
+          <form target="_blank" action="https://formsubmit.co/saima.techproed@gmail.com" method="POST"> <!-- We will determine the action from a site shortly. Make a method post.-->
+            <div class="form-row">
+                  <label for=“firstname”>FirstName</label>
+                  <input type="text" name="firstname" id="firstname" required> <!-- name-value goes to backend -->
+            </div>
+
+
+            <div class="form-row">
+                  <label for="">LastName</label>
+                  <input type="text" name="lastname" id="lastname" required>            
+           </div>
+
+            <div class="form-row">
+                  <label for="email">Email</label>
+                  <input type="email" name="email" id="email" required placeholder="info@example.com">
+            </div>
+
+        <div class="form-row">
+               <label for="message">Message</label>
+               <textarea name="message" id="message" rows="5"></textarea> <!-- delete column. we will arrange -->
+            </div>
+
+            <button type="submit">Send</button>
+
+        </form>
+     </main>
+
+     
+     <footer>
+
+      <div>
+          <h3>Phone</h3>
+          <p><a href="tel:+905325556677">(532)555-66-77</a></p>
+      </div>
+
+      <div>
+          <h3>Email</h3>
+          <p><a href="mailto:john@connor.com">john@connor.com</a></p>
+
+      </div>
+
+      <div>
+          <h3>Follow Me</h3>
+         <p>
+              <a href="https://linkedin.com" target="_blank">Linkedin</a> |
+               <!-- you can add your own linkedln account -->
+               <a href="https://github.com" target="_blank">GitHub</a>
+         </p>
+
+      </div>
+
+      <div>
+          <h3>Copyright</h3>
+          <p> &copy;2024 - John Conner</p>
+
+      </div>
+
+   </footer>
+    
+</body>
+</html>

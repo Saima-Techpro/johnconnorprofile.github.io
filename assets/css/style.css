@@ -1,0 +1,186 @@
+body{
+    font-family: "Montserrat", sans-serif;
+    padding: 2rem;
+}
+
+header{
+    display:flex; /* We brought the title and nav blog together */
+    flex-direction: row; /* The default is row anyway. Normally there is no need to write. I wrote it to remember */
+    justify-content: space-between; /* With the john part, I moved the links section, one to the left and one to the right */
+    align-items: center; /* we added them so they appear in the same alignment vertically */
+    background-color: burlywood;
+    border-radius: 5rem;
+    padding: 1rem 2rem; /* 1 rem from top to bottom, 2 rem from right to left */
+    flex-wrap:wrap; 
+
+}
+
+header .title { /*Attention: there is a space between header and .title */
+    display:flex;
+    align-items: center; /* we added them so they appear in the same alignment vertically */
+    gap: 1rem; /* gray circle, we opened between john and web */  
+}
+
+/* We wrote 9-john in h2. h's have automatic margin. Let's remove it. Let's determine the spaces */
+header h2 {
+    margin: 0;
+ }
+
+ header .title span {
+    width: 50px;
+    height: 50px;
+    background-color: cadetblue;  
+    border-radius: 50%; /* 50% makes a square box round */
+ }
+
+ header nav a {
+    font-weight: 600;
+    text-decoration: none;
+    color:black;
+}
+/* 12-When you hover over the links in the menu on the right, the colors change */
+header nav a:hover {
+    color: bisque;
+} 
+
+main {
+    padding: 5rem 20%; 
+}
+
+main .home{
+    display:flex;
+    align-items: center;  /* we aligned the image and text vertically */
+    gap: 2rem; /* let's open the gap between the image and the text */
+}
+
+main .profile img {
+    width: 400px;
+    height: 300px;
+    border-radius: 50%; /* we made the image round */
+    border: 1rem solid burlywood; /* we could make the image transparent with opacity values ​​of 0-1 */
+}
+
+/*let's organize the buttons and their contents */
+main .button a{
+    background-color: burlywood;
+    padding: 1rem 2rem; /* from top to bottom - from right to left. Let the writings move away from the edge */
+    display: inline-block; /* a tag is inline. Problems may occur when padding inlines vertically.  */
+    /* so we made a hybrid. The buttons are a little further away from the text on them */
+    border-radius: 5rem; /* we ovalized the edges */
+    text-decoration: none; /* We removed the text under the links */
+    font-weight: 500; /* we made all the text slightly bold */
+    box-shadow: 3px 3px 5px black; /* 3 pixels to the right (we would give a negative value for horizontal-left) and 3 pixels 
+    It creates a shadow effect that is shifted down (vertically), blurred by 5 pixels (0 would be a sharp shadow) and black.  */
+    margin-right: 1rem; /* we opened the space between the buttons */
+}
+
+main .button a:hover{
+    background-color: cadetblue;
+}
+footer {
+    display:flex; /* we took them all together */
+    justify-content: space-between; /* let's leave equal space between them */
+    border-top: 1px solid black; /* we drew a line on the submenu */
+    flex-wrap:wrap; 
+  } 
+  
+
+main h1 span, 
+header .title span {
+  width: 50px;
+  height: 50px;
+  background-color: cadetblue;
+  border-radius: 50%; /* 50% makes a square box round */
+  display: inline-block; /* We are trying to create the circle inside its span. inlines do not take width and height */
+  /* That's why we made a hybrid to make it look round. Question: So how did you get the header .title span? */
+  /* Got it thanks to flex... now circle and go to the bottom to center h1. (a4 is there) */
+}
+
+header nav a {
+    font-weight: 600;
+    text-decoration: none;
+    color:black;
+}
+header nav a:hover {
+    color: bisque;
+}
+
+main .home{
+    display:flex;
+    align-items: center;  /* we aligned the image and text vertically */
+    gap: 2rem; /* let's open the gap between the image and the text */
+}
+
+main h1{
+    display:flex; /* We placed the resume and the circle to center and align them */
+    justify-content: center; /* creates a layout with elements centered horizontally. */
+    align-items: center; /* we aligned the two */
+    gap: 0.5rem; /* we made space between the circle and the text */
+    /* Actually, since we made this flex, the above display: inline-block; We could delete part of it */
+    
+}
+
+
+
+main .card{
+    display:flex; /* Groming and the text on the front are side by side. Let's align them now */
+    align-items: center; /* aligned vertically */
+    gap: 2rem; /* we opened them */
+    border: 1px solid burlywood; /* Actually, there are variables in colors, we could define them much easier. we won't see it */
+    border-radius: 2rem; /* we made an oval */
+    padding: 2rem; /* text moves away from the edges */
+    box-shadow: 3px 3px 7px burlywood; /* bottom right blur color */
+    margin-bottom: 2rem; /* When a card is added underneath it, it won't stick to it */    
+   flex-wrap: wrap;
+   overflow-wrap: break-word; /* Prevents text from extending outside the box */
+   word-wrap: break-word; /* For older browsers */
+   word-break: break-word; /* Splits words if necessary */
+}
+
+main section{ /* When we add sections, let there be a space between them */
+    margin-bottom: 4rem; 
+   /* a6- card is finished. Go to HTML. copy and paste the card. (a7 is there bro.) */
+}
+
+.form-row{ 
+    margin-bottom: 1rem;
+}
+
+label{
+    display:block; 
+}
+
+
+textarea, /* We made it so that the boxes expand inside the form, but it will not work. It will work when you give 100% to the form below. We expanded the area of ​​the form */
+input{
+    width: 100%;
+    padding: 0.5rem; /* We expanded the input */
+    border-radius: 0.5rem;
+    border: 1px solid gray;
+}
+
+form{
+    width: 100%;
+}
+
+button{
+    padding: 0.5rem 1rem; /* top to bottom, right to left */
+    border-radius: 0.5rem;
+    border: 1px solid gray;
+    background-color: burlywood;
+    font-size: 1.2rem; /* we enlarged the text inside the button */
+    /* Sukur is over. Let's go to https://formsubmit.co/ and define an action. Email is sent to you but limited (domain)*/
+}
+
+
+
+
+
+
+
+  
+  
+
+
+ 
+ 
